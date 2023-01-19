@@ -43,3 +43,11 @@ def stochastic_gradient_descent(x,y,w,b,c,epoch):
         B.append(b)
         print("epoch:",i+1,"w =",w,"b =",b)
     return W,B,L
+
+sw,sb,sl = stochastic_gradient_descent([0.5,2.5],[0.2,0.0],-2,-2,1,300)
+
+epoch = [i for i in range(1,301)]
+plt.plot(epoch,sl)
+plt.title('Stochastic Gradient Descent Loss vs Epochs')
+plt.ylabel('Loss')
+plt.xlabel('Epochs')
