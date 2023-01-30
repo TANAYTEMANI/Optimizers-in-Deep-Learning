@@ -84,7 +84,7 @@ def stochastic_gradient_descent(x,y,w,b,c,epoch):
     return W,B,L
 ```
 
-### Plotting Graph between Loss & Epochs
+### Graph between Loss & Epochs
 ```javascript I'm A tab
 epoch = [i for i in range(1,301)]
 plt.plot(epoch,sl)
@@ -92,3 +92,26 @@ plt.title('Stochastic Gradient Descent Loss vs Epochs')
 plt.ylabel('Loss')
 plt.xlabel('Epochs')
 ```
+![image](https://user-images.githubusercontent.com/82306595/215406185-74be3067-9453-4543-80a3-8b5eddfa053c.png)
+
+
+### Graph between Loss & Weights
+```javascript I'm A tab
+plt.plot(W,loss)
+plt.xlabel("Weight")
+plt.ylabel("LOSS")
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/82306595/215406571-c7001487-6370-42f5-ab88-4c505bfbd503.png)
+
+
+### Graph between Loss & Bias
+```javascript I'm A tab
+plt.plot(B,loss)
+plt.xlabel("Bias")
+plt.ylabel("LOSS")
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/82306595/215406984-6e2a774a-4b41-4057-a9d1-efe942e1af77.png)
+
+ 
